@@ -82,6 +82,13 @@ $ kubectl get nodes
 ```
 You should see 2 worker nodes ready.
 
+![Screenshot (151)](https://github.com/user-attachments/assets/23ee6a63-e674-47c0-81be-1b9e445feebb)
+
+![Screenshot (152)](https://github.com/user-attachments/assets/2502974d-10e8-4fbb-a933-fc167a7227e5)
+
+![Screenshot (153)](https://github.com/user-attachments/assets/69e88d2e-018c-4918-9897-7dc684fe9625)
+
+
 
 
 
