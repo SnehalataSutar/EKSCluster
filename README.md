@@ -21,5 +21,41 @@ Ensure you have:
 
 •	└── outputs.tf
 
+Write the code from main.tf, variable.tf and outputs.tf
+
+### Step 2: Deploy
+
+#### 🔧 Installing Terraform
+
+``` sudo apt-get update 
+
+sudo apt-get install -y gnupg software-properties-common curl
+
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+
+sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+
+sudo apt-get update
+
+sudo apt-get install terraform 
+
+terraform -v 
+
+terraform init
+
+terraform plan
+
+terraform apply
+
+
+#### After apply, run:
+
+$ aws eks --region <region_name> update-kubeconfig --name my-eks-cluster(Cluster_name)
+
+$ kubectl get nodes
+
+You should see 2 worker nodes ready.
+
+
 
 
