@@ -46,14 +46,40 @@ terraform init
 terraform plan
 
 terraform apply
+```
+
+#### 🛠️ Installing kubectl
+
+```
+curl -LO "https://dl.k8s.io/release/$(curl -Ls https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+chmod +x kubectl
+sudo mv kubectl /usr/local/bin/
+kubectl version --client
+```
+
+#### Install AWS CLI on Ubuntu
+
+Run the following:
+```
+sudo apt update
+sudo apt install -y awscli
+```
+
+Then verify it's installed:
+
+```
+aws --version
+```
 
 
 #### After apply, run:
 
-$ aws eks --region <region_name> update-kubeconfig --name my-eks-cluster(Cluster_name)
-
+```
+$ aws eks --region us-east-1(region_name) update-kubeconfig --name my-eks-cluster(Cluster_name)
+```
+```
 $ kubectl get nodes
-
+```
 You should see 2 worker nodes ready.
 
 
